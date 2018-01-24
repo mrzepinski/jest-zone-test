@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": ["ES2015.Promise", "es7", "dom"],
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "declaration": false,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "noEmitHelpers" : true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "types": ["jest"],
+    "paths": {
+      "zone.js": ["node_modules/zone.js/dist/zone.js.d.ts"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "@types/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "*.spec.ts?(x)"
+  ]
+}
